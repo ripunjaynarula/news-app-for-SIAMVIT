@@ -5,7 +5,7 @@ $(document).ready(function(){
       e.preventDefault();
       
       let query = $("#searchquery").val();
-      let url = `https://newsapi.org/v2/top-headlines?q=${query}stock&country=us&category=general&apiKey=7b2f4a409e444c9797d40263484ace92`;
+      let url = `https://gnews.io/api/v3/search?q=${query}&token=9180ff49b09efc6748296287bdab1439`;
       
       if(query !== ""){
         
@@ -17,20 +17,26 @@ $(document).ready(function(){
           
          
     
-          success: function(news){
+          success: function(data){
             let output = "";
-            let latestNews = news.articles;
+            let latestNews = data.articles;
             
             for(var i in latestNews){
               output +=`
                 <div class="col l6 m6 s12">
-                <h4>${latestNews[i].title}</h4>
-                <img src="${latestNews[i].urlToImage}" class="responsive-img">
+                <br>
+                <style>
+                h4{
+                  font-family:'Times New Roman';
+
+                }
+                </style>
+                <h4><u>${latestNews[i].title}</u></h4>
                 <p>${latestNews[i].description}</p>
-                <p>${latestNews[i].content}</p>
+                 
                 <p>Published on: ${latestNews[i].publishedAt}</p>
                 <a href="${latestNews[i].url}" class="btn">Read more</a>
-                </div>
+                <hr></div>
               `;
             }
             

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let url = "https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=7b2f4a409e444c9797d40263484ace92";
+    let url = "https://gnews.io/api/v3/top-news?token=9180ff49b09efc6748296287bdab1439";
   
     $.ajax({
       url: url,
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(".progress").hide();
       },
   
-      success: function (newsdata) {
+      success: (newsdata) => {
         let output = "";
         let latestNews = newsdata.articles;
         for (var i in latestNews) {
@@ -44,6 +44,7 @@ $(document).ready(function () {
              </div>
             </div>
           `;
+          
         }
   
         if (output !== "") {

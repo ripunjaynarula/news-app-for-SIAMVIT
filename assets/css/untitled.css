@@ -7,6 +7,7 @@
   padding-top: 100px;
 }
 }
+
 @media(min-width:800px)
 {
   #boxx{
@@ -43,6 +44,14 @@ background-image{
 
 }
 }
+@media(min-width:500px)
+{
+  #searchbtn{
+width: 15%;  
+margin-left: 43%;
+
+}
+}
 @media(min-width:800px)
 {
   #searchbtn{
@@ -65,4 +74,29 @@ margin-left: 45%;
     margin-left: 25%;
   }
 }
-
+#result{
+  background-color: white;
+}
+#newsResults{
+  font-family: 'arial';
+  font-weight: bolder;
+  break-before: auto;
+  color: darkblue;
+  line-height: normal;
+  
+}
+#break{
+  margin-top: 2px;
+}
+@media(min-width:300px)
+{
+img{
+  width:100%;
+}
+}
+@media(min-width:700px)
+{
+  img{
+    width: 500px;
+  }
+}
