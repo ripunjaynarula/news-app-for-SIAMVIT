@@ -100,3 +100,24 @@ img{
     width: 500px;
   }
 }
+#result{
+  margin-top: 100px;
+  background-color: white;
+}
+#results{
+  margin-top: 00px;
+  background-color: white;
+}
+.nav-item:active{
+  background-color: rgb(10,158,147);
+}
+#genre{
+  padding-top: 200px;
+  color: white;
+  text-align: center;
+
+}
+hr{
+  margin:auto;
+  padding-bottom: 15px;
+}

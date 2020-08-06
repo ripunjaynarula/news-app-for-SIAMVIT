@@ -1,11 +1,11 @@
 
-$(document).ready(function(){
+$(document).ready(function(e){
     
     $("#searchbtn").on("click",function(e){
       e.preventDefault();
       
       let query = $("#searchquery").val();
-      let url = `https://gnews.io/api/v3/search?q=${query}&token=9180ff49b09efc6748296287bdab1439`;
+      let url = `https://gnews.io/api/v3/search?q=${query}&token=4a25a94bf5010d7c44d96f6331cab821`;
       
       if(query !== ""){
         
