@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SEARCH</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"-->
+    <style>
+        body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+  margin-top:200px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#searchbtn {
+  margin-top:10px;
+  background: rgb(10,158,147);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+form.example button:hover {
+  background: orangered;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+
+<body id="page-top" style="background-image:url(assets/img/collection-newspapers.jpg">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgb(255,255,255);padding-left: 3px">
+        <div class="container">
+            <p style="padding-top: 9px;color: rgb(10,158,147);margin-bottom: 2px;margin-top: 0px;margin-right: 2px;margin-left: 17px;"><strong><em>NEWS</em></strong></p><a href="index.html"><img class="img-fluid" src="assets/img/logo-686.png" width="100px" height="15px" style="padding-top: 0px;height: 20px;width: 132px;margin-left: 6px;"></a><button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" data-aos="fade" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify" style="color: rgba(0,0,0,0.5);background-color: rgba(0,0,0,0);"></i></button>
+            
+                <div class="collapse navbar-collapse" id="navbarResponsive"style=.open { transform: scale($toggled-size); }>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="general.html" style="color: rgb(0,0,0);">general</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="entertainment.htm" style="color: rgb(1,1,1);">entertainment</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="science.html" style="color: rgb(8,8,8);">science</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="science.html" style="color: rgb(8,8,8);">sports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="search.html" style="color: rgb(8,8,8);">SEARCH</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+       
+            <form class="example" action="/action_page.php">
+            <i class="material-icons prefix">public</i>
+            <input type="text" id="searchquery" placeholder="Find what's happening in the US...">
+            <!--button type="submit"><i class="fa fa-search"></i></button-->
+          </form> 
+          <div class="container">
+            <input type="submit" id="searchbtn" class="btn col m2 s12" value="search">
+         </div>
+          <div class="row">
+            <div id="newsResults"></div>
+         </div> 
+       
+
+   
+    
+
+
+    
+ </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/creative.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--script src="assets/js/iconChanger.js"></script-->
+    <script src="assets/js/newsapi.js"></script>
+</body>
+
+</html>
